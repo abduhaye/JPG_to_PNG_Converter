@@ -9,7 +9,7 @@ if not (os.path.exists(out_folder)):
     os.makedirs(out_folder)
 for img_name in os.listdir(in_folder):
      img = Image.open(f'{in_folder}{img_name}')
-     spli_img_name = os.path.splitext(img_name)[0]
-     img.save(f'{out_folder}{spli_img_name}.png','png')
+     split_img_name = os.path.splitext(img_name)[0]
+     img.save(f'{out_folder}{split_img_name}.png','png')
      print("All Done!")
 
